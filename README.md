@@ -8,6 +8,38 @@ uses :
 - https://github.com/syntax-tree/unist-util-remove
 - https://github.com/syntax-tree/unist-util-is
 
+## Installing
+
+```js 
+// deno world
+import rehypeAdVacuum from 'https://denopkg.com/ericdmoore/rehype-ad-vacuum@main/mod.ts'
+```
+
+```js
+// Yarn | NPM world
+// npm i rehype-ad-vacuum
+// yarn add rehype-ad-vacuum
+// no CJS/ require support
+import rehypeAdVacuum from 'rehype-ad-vacuum'
+```
+
+## Usage
+
+```ts 
+// deno world
+import { unified } from 'https://denopkg.com/ericdmoore/unified@main/mod.ts';
+import rehypeParse from 'https://denopkg.com/ericdmoore/unified@main/mod.ts';
+import {vacuum, starterLists} from 'https://denopkg.com/ericdmoore/rehype-ad-vacuum@main/mod.ts'
+
+const someCoolUrl:string = await getRandUrlFromDB()
+const html = await (await fetch(someCoolUrl)).text()
+
+unified().
+.use(rehypeParse)
+.use(rehypeAdVacuum, {lists: starterLists})
+.process(html)
+```
+
 ```ts
 interface ABPRuleInit {
     protocol?: string;
