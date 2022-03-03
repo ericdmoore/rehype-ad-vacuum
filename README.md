@@ -42,6 +42,7 @@ unified().
 
 ```ts
 interface ABPRuleInit {
+    allow: boolean;
     protocol?: string;
     username?: string;
     password?: string;
@@ -51,9 +52,10 @@ interface ABPRuleInit {
     search?: string;
     hash?: string;
     baseURL?: string;
-    elementBy:{
-        allow?: boolean
-        selector?: string
+    elementBy?: {
+        allow: boolean;
+        selectorType: 'css' | 'xpath';
+        selector: string;
     }
 } // type is basically {URLPattern & {elementBy}}
 ```
