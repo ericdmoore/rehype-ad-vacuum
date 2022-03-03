@@ -1,6 +1,6 @@
 # rehype-ad-vacuum
 
->  [rehypejs][rehype] + Easylist and company
+>  [rehypejs][rehype] + [Easylist](https://easylist.to/) and company
 
 uses :
 - https://github.com/syntax-tree/hast-util-select
