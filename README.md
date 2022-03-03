@@ -41,6 +41,12 @@ unified().
 ```
 
 ```ts
+
+interface IElement{
+    allow: boolean;
+    selectorType: 'css' | 'xpath';
+    selector: string;
+}
 interface ABPRuleInit {
     allow: boolean;
     protocol?: string;
@@ -52,12 +58,8 @@ interface ABPRuleInit {
     search?: string;
     hash?: string;
     baseURL?: string;
-    elementBy?: {
-        allow: boolean;
-        selectorType: 'css' | 'xpath';
-        selector: string;
-    }
-} // type is basically {URLPattern & {elementBy}}
+    element?: IElement
+} // type is basically {URLPattern & {allow:boolean, element?: IElement}}
 ```
 <!-- Definitions -->
 [rehype]: https://github.com/rehypejs/rehype
