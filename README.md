@@ -42,7 +42,7 @@ unified().
 
 ```ts
 
-IVacuumParams{
+interface IVacuumParams{
     lists?: string[] // default - [ easylist ] url of txt file holding parsable filter rules
     strict?: boolean // default - false
 }
