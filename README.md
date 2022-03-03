@@ -2,11 +2,14 @@
 
 >  [rehypejs][rehype] + [Easylist](https://easylist.to/) and company
 
-uses :
+### uses :
 - https://github.com/syntax-tree/hast-util-select
 - https://github.com/syntax-tree/unist-util-select
 - https://github.com/syntax-tree/unist-util-remove
 - https://github.com/syntax-tree/unist-util-is
+
+### dev use case:
+- https://github.com/syntax-tree/unist-builder
 
 ## Installing
 
