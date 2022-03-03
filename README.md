@@ -66,5 +66,11 @@ interface ABPRuleInit {
     element?: IElement
 } // type is basically {URLPattern & {allow:boolean, element?: IElement}}
 ```
+
+## Reference:
+
+- ABP Syntax: https://adblockplus.org/filter-cheatsheet
+
+
 <!-- Definitions -->
 [rehype]: https://github.com/rehypejs/rehype
