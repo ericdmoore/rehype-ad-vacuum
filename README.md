@@ -37,7 +37,7 @@ import {vacuum, starterLists} from 'https://denopkg.com/ericdmoore/rehype-ad-vac
 const someCoolUrl:string = await getRandUrlFromDB()
 const html = await (await fetch(someCoolUrl)).text()
 
-unified().
+unified()
 .use(rehypeParse)
 .use(rehypeAdVacuum, {lists: starterLists})
 .process(html)
